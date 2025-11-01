@@ -8,3 +8,4 @@ def call (String credID, String imageName, String imageTag){
                     sh "docker image tag ${imageName}:${imageTag} ${env.dockerHubUser}/${imageName}:${imageTag}"
                     sh "docker push ${env.dockerHubUser}/${imageName}:${imageTag}"
 }
+}
