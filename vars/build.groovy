@@ -1,3 +1,3 @@
-def call(String name, String tag){
+def call(String name,){
   sh "docker build -t ${name} ."
 }
